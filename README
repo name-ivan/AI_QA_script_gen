@@ -1,1 +1,14 @@
+Project structure
+
+qa_ai_bot/
+├── main.py                         # Entry point to start the Telegram bot
+├── .env                            # API keys (Google + Telegram), ignored by Git
+├── requirements.txt                # Python dependencies
+│
+├── handlers/
+│   ├── messages.py                 # Handles incoming user prompts
+│   └── callbacks.py                # Handles button clicks (doc type selection)
+│
+├── ai/
+│   └── doc_generator.py            # Sends prompt + doc type to Gemini and returns output
 
