@@ -97,6 +97,15 @@ qa_ai_bot/
 
 ## ✅ To Do
 
-- [ ] Option to save output to Google Docs or Sheets
-- [ ] "Refine" or "Regenerate" button support
-- [ ] Generate Selenium test code from test stories
+- [ ] Save generated documents to:
+  - Google Docs (for test stories, bug reports)
+  - Google Sheets (for checklists, test cases)
+- [ ] Generate Selenium-based test automation framework from test stories:
+  - Create `pytest` test functions with Selenium boilerplate
+  - Scaffold project structure (`tests/`, `conftest.py`, etc.)
+  - Export as a zip or push to GitHub repo
+- [ ] Generate manual test suites in table format:
+  - Columns: Test Case ID, Description, Steps, Expected Result, Priority
+  - Export as CSV or Google Sheet
+- [ ] Add option to download generated test suite or framework locally
+- [ ] Add "Regenerate" or "Refine" button to iterate on outputs
