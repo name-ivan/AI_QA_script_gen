@@ -10,3 +10,6 @@ venv/
 
 # VSCode (optional)
 .vscode/
+
+# A file that is using during the development for testing validity of API_KEYs
+check.py
