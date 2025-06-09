@@ -18,7 +18,7 @@ def generate_doc(prompt: str, doc_type: str) -> str:
     full_prompt = f"{instruction}\n\n{prompt}"
 
     response = client.messages.create(
-        model="claude-3-sonnet-20240229",  # Cheaper, balanced Claude 3 model (vs "claude-3-opus-20240229")
+        model="claude-3-haiku-20240307",  # Fast, cheap fallback model
         max_tokens=1024,
         temperature=0.7,
         messages=[
