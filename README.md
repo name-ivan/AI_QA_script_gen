@@ -11,16 +11,16 @@ You can:
   - 🐞 Bug Report
 - 📄 Get the result directly in the Telegram chat
 
-- ## ▶️ How to Use the Bot If It's Available (might be not available as it's an experimental project)
+## 🧪 How to Use It
 
-1. Go to Telegram and open [@QAhelper_AI_bot](https://t.me/QAhelper_AI_bot)
-2. Type your test prompt in one or more messages
-3. Choose what to generate using the button menu:
+1. Open your bot in Telegram (e.g. `@QAhelper_AI_bot`)
+2. Type your test prompt in one or more messages (e.g. “Login page with 2FA and forgot password”)
+3. Click one of the buttons:
    - 🧪 Test Stories
    - 🧾 Test Suite
    - ☑️ Checklist
    - 🐞 Bug Report
-4. The bot will respond using Claude 3 Haiku model
+4. The bot will use **Claude 3 Haiku** to generate the requested doc
 
 ---
 
@@ -64,19 +64,6 @@ ANTHROPIC_API_KEY=your_claude_api_key_here
 ```bash
 python main.py
 ```
-
----
-
-## 🧪 How to Use It
-
-1. Open your bot in Telegram (e.g. `@QAhelper_AI_bot`)
-2. Type your test prompt in one or more messages (e.g. “Login page with 2FA and forgot password”)
-3. Click one of the buttons:
-   - 🧪 Test Stories
-   - 🧾 Test Suite
-   - ☑️ Checklist
-   - 🐞 Bug Report
-4. The bot will use **Claude 3 Haiku** to generate the requested doc
 
 ---
 
