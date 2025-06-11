@@ -93,15 +93,36 @@ python main.py
 ```plaintext
 qa_ai_bot/
 ├── main.py
+│   # Entry point for the Telegram bot.
+│   # Initializes the bot application, loads environment variables from `.env`,
+│   # registers message and callback handlers, and starts polling for updates.
+│
 ├── .env.example
+│   # Example environment configuration file.
+│   # Specifies required variables like TELEGRAM_BOT_TOKEN and ANTHROPIC_API_KEY.
+│   # Users can copy this to `.env` and fill in their own credentials.
+│
 ├── requirements.txt
+│   # Lists all Python dependencies for the project.
+│   # Includes libraries for Telegram bot integration, Claude API (Anthropic),
+│   # Selenium (future extension), pytest (optional testing), and dotenv.
 │
 ├── handlers/
-│   ├── messages.py        # User input + buttons
-│   └── callbacks.py       # Button logic & response
+│   ├── messages.py
+│   │   # Handles plain text messages from users.
+│   │   # Stores multi-line prompts in a buffer (per user), then displays a set
+│   │   # of inline buttons for document generation (e.g., Test Suite, Checklist).
+│   │
+│   └── callbacks.py
+│       # Handles button presses from users (Telegram callback queries).
+│       # Reads the accumulated prompt from the buffer and generates the selected
+│       # type of QA document using Claude. Sends the result back as a formatted message.
 │
 ├── ai/
-│   └── doc_generator.py   # Claude 3 API interaction
+│   └── doc_generator.py
+│       # Core logic for interacting with Anthropic's Claude API.
+│       # Uses predefined instruction templates for different QA document types.
+│       # Sends prompt + instruction to Claude and returns the formatted output.
 ```
 
 ---
