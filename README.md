@@ -11,7 +11,7 @@ You can:
   - 🐞 Bug Report
 - 📄 Get the result directly in the Telegram chat
 
-- ## ▶️ How to Use the Bot If It's Available (might be not as its a testing project)
+- ## ▶️ How to Use the Bot If It's Available (might be not available as its a testing project)
 
 1. Go to Telegram and open [@QAhelper_AI_bot](https://t.me/QAhelper_AI_bot)
 2. Type your test prompt in one or more messages
