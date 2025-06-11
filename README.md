@@ -11,7 +11,7 @@ You can:
   - 🐞 Bug Report
 - 📄 Get the result directly in the Telegram chat
 
-- ## ▶️ How to Use the Bot If It's Available (might be not available as it's a testing project)
+- ## ▶️ How to Use the Bot If It's Available (might be not available as it's an experimental project)
 
 1. Go to Telegram and open [@QAhelper_AI_bot](https://t.me/QAhelper_AI_bot)
 2. Type your test prompt in one or more messages
@@ -91,38 +91,26 @@ python main.py
 ## 📁 Project Structure
 
 ```plaintext
-qa_ai_bot/
+AI_QA_script_gen/
 ├── main.py
-│   # Entry point for the Telegram bot.
-│   # Initializes the bot application, loads environment variables from `.env`,
-│   # registers message and callback handlers, and starts polling for updates.
+│   # Starts the Telegram bot, loads env vars, and registers message + button handlers.
 │
 ├── .env.example
-│   # Example environment configuration file.
-│   # Specifies required variables like TELEGRAM_BOT_TOKEN and ANTHROPIC_API_KEY.
-│   # Users can copy this to `.env` and fill in their own credentials.
+│   # Example of required environment variables (API keys for Telegram and Claude).
 │
 ├── requirements.txt
-│   # Lists all Python dependencies for the project.
-│   # Includes libraries for Telegram bot integration, Claude API (Anthropic),
-│   # Selenium (future extension), pytest (optional testing), and dotenv.
+│   # Project dependencies (Telegram bot, Claude API client, etc.).
 │
 ├── handlers/
 │   ├── messages.py
-│   │   # Handles plain text messages from users.
-│   │   # Stores multi-line prompts in a buffer (per user), then displays a set
-│   │   # of inline buttons for document generation (e.g., Test Suite, Checklist).
+│   │   # Collects user input and displays buttons for generating QA documents.
 │   │
 │   └── callbacks.py
-│       # Handles button presses from users (Telegram callback queries).
-│       # Reads the accumulated prompt from the buffer and generates the selected
-│       # type of QA document using Claude. Sends the result back as a formatted message.
+│       # Handles button clicks, sends prompt to Claude, and returns generated output.
 │
 ├── ai/
 │   └── doc_generator.py
-│       # Core logic for interacting with Anthropic's Claude API.
-│       # Uses predefined instruction templates for different QA document types.
-│       # Sends prompt + instruction to Claude and returns the formatted output.
+│       # Sends prompts to Claude 3 API and returns test docs (stories, checklists, etc.).
 ```
 
 ---
