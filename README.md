@@ -10,7 +10,8 @@ You can:
   - ☑️ Checklist
   - 🐞 Bug Report
 - 📄 Get the result directly in the Telegram chat
-
+---
+![Uploading demo_QA_AI_helper.gif…]()
 ---
 
 ## 🔧 Setup Instructions
