@@ -11,7 +11,7 @@ You can:
   - 🐞 Bug Report
 - 📄 Get the result directly in the Telegram chat
 ---
-![Uploading demo_QA_AI_helper.gif…]()
+![demo_QA_AI_helper](https://github.com/user-attachments/assets/fb54920b-0e27-431b-98ca-6a8d8f82cfe3)
 ---
 
 ## 🔧 Setup Instructions
